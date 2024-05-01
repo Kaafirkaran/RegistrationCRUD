@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div >
+        <a class="navbar-brand" *ngIf="!isLogin" (click)="ChangeHeader()" routerLink="/login">Login</a>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+      <div >
+        <a class="navbar-brand" *ngIf="isLogin" (click)="ChangeHeader()" routerLink="/registration">Registration</a>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+      
+    </div>
+  </nav>
